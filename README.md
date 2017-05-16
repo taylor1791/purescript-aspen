@@ -1,4 +1,6 @@
 # purescript-aspen
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/taylor1791/purescript-aspen.svg)](https://greenkeeper.io/)
 [![Build status](https://travis-ci.org/taylor1791/purescript-aspen.svg?branch=master)](https://travis-ci.org/taylor1791/purescript-aspen)
 
 Combine Redux action handlers into a type-safe reducer.
