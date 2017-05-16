@@ -3,6 +3,12 @@
 
 Combine Redux action handlers into a type-safe reducer.
 
+## Install
+
+```
+bower install purescript-aspen
+```
+
 ## Quick start
 
 First write some action handlers. An action handler is a function that handles
