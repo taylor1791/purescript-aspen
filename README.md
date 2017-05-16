@@ -1,7 +1,8 @@
 # purescript-aspen
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/taylor1791/purescript-aspen.svg)](https://greenkeeper.io/)
+![Latest release](https://pursuit.purescript.org/packages/purescript-aspen/badge)](https://pursuit.purescript.org/packages/purescript-aspen)
 [![Build status](https://travis-ci.org/taylor1791/purescript-aspen.svg?branch=master)](https://travis-ci.org/taylor1791/purescript-aspen)
+[![Greenkeeper badge](https://badges.greenkeeper.io/taylor1791/purescript-aspen.svg)](https://greenkeeper.io/)
 
 Combine Redux action handlers into a type-safe reducer.
 
@@ -66,4 +67,8 @@ Actions unknown to a reducer are passed through and ignored.
 
 This library is like [redux-actions](https://github.com/acdlite/redux-actions),
 but PureScript-ian. Thank you for the inspiration.
+
+## Documentation
+
+- Module documentation is [published on Pursuit](http://pursuit.purescript.org/packages/purescript-aspen).
 
