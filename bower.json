@@ -1,6 +1,10 @@
 {
   "name": "purescript-aspen",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:taylor1791/purescript-aspen.git"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
