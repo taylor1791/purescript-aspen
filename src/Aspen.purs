@@ -1,4 +1,6 @@
--- | Combine Redux action handlers into a type-safe reducer.
+-- | Combine Redux action handlers into a type-safe reducer. See the
+-- | [test](https://github.com/taylor1791/purescript-aspen/blob/master/test/Main.purs)
+-- | for a more detailed tutorial.
 
 module Aspen
   (Action(..), ActionCreator,
@@ -11,7 +13,7 @@ import Data.Symbol (class IsSymbol, reflectSymbol)
 newtype Action (t :: Symbol) p = Action {"type" :: String, payload :: p}
 type ActionCreator t p = IsSymbol t => p -> Action t p
 
--- | _The_ action creator. This function can create all of your action with
+-- | _The_ action creator. This function can create all of your actions with
 -- | a type annotation. None of this action creator creator stuff.
 -- |
 -- | ```
@@ -28,11 +30,11 @@ createAction
 createAction payload =
   Action {type: reflectSymbol (SProxy :: SProxy t), payload}
 
--- | Takes "action handler set" and creates a reducer. An action handler is a
+-- | Takes an "action handler set" and creates a reducer. An action handler is a
 -- | function of type `s -> Action t p -> s` where `s` is the state handled
 -- | by the reducer. `t` is the type of action to handle and `p` is the type of
 -- | the payload. An exmaple action handler may be of type
--- | `logIn :: State -> `Action "LOG_IN" User` -> State`.
+-- | `logIn :: State -> Action "LOG_IN" User -> State`.
 createReducer
   :: forall t11 t15 t16 s t p
   .  RowCons t (Action t p) t16 t15
