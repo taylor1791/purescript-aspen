@@ -1,5 +1,6 @@
 {
   "name": "purescript-aspen",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
