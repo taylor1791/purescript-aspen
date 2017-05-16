@@ -9,7 +9,7 @@
     "type": "git",
     "url": "git@github.com:taylor1791/purescript-aspen.git"
   },
-  "keywords": ["purescript", "redux", "actions", "aspen"],
+  "keywords": ["purescript", "redux", "actions", "reducers", "aspen", "handler"],
   "author": "Taylor Everding <taylor1791@users.noreply.github.com>",
   "license": "MIT",
   "devDependencies": {
