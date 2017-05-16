@@ -8,7 +8,7 @@ Combine Redux action handlers into a type-safe reducer.
 
 ## Install
 
-```
+```shell
 bower install purescript-aspen
 ```
 
@@ -19,7 +19,7 @@ one and only one Redux action. An `Action` is of type `Action (t :: Symbol) p`
 where `t` is the `type` of the action and `p` is the type of the payload. You
 can write as many of these as you want. In this example I have 3.
 
-```
+```purs
 addTask :: State -> Action "ADD_TASK" Task -> State
 addTask = ...
 
@@ -35,7 +35,7 @@ using `createReducer`, `handle`, and `>>=>>`. This creates a reducer with the
 type of all of the supported actions in the signature. This provides compile
 time safety. All unsupported actions types will not change the state.
 
-```
+```purs
 reducer
   :: forall p t r1 r2
   .  RowCons t (Action t p) r1
