@@ -1,0 +1,20 @@
+{
+  "name": "purescript-aspen",
+  "version": "0.0.1",
+  "description": "Combine Redux action handlers into a type-safe reducer",
+  "scripts": {
+    "test": "pulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:taylor1791/purescript-aspen.git"
+  },
+  "keywords": ["purescript", "redux", "actions", "aspen"],
+  "author": "Taylor Everding <taylor1791@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "pulp": "^11.0.0",
+    "purescript": "^0.11.4"
+  }
+}
