@@ -8,3 +8,11 @@ install:
 - npm install
 - bower install
 
+after_success:
+- test "$TRAVIS_REPO_SLUG" == "taylor1791/purescript-aspen" && test "$TRAVIS_PULL_REQUEST"
+  == "false" && test "$TRAVIS_BRANCH" == "master" && echo $GITHUB_TOKEN | pulp login
+  && echo y | pulp publish --no-publish
+
+env:
+  global:
+    secure: QW7camJsqGqbDtcOkYZEa0xZb5HxfIvN1dXwESEqCUwMELbSo5IcBWYEEmR3alOXPwnDG+/ADBLC9Ny8OYDag8buKsSyqfUCExeaAdTgH4DgIvcq7Nhf7tdNv4qalNLM6pZnbGBChvVNPgVjHOB4eZCC3lmvmz4SJY3wqhRDmEc9X3nz4hmyuxxugPKDpIAYN5nHmvHzKIxMrRmZdMfeXQm/Ex2cDLX9ZraaQ6kuZEbh6oGdVlR5MjejH/SuxGLk87A/3zqpq5S86FrVxP+WD/SDZhI3O2Qku1MJ008qlNkjVGO/5VKdYjfDf0rqA2zdbShlO12fapA/FclkFkH3/wmhpMrxhIPvLDPq/K1Aux73Y5vsLY+RdxdXHOEIjlJvSP6ziBEusl98sFRD/Y84bwxHCSsc86wxpU8uimSGKEimIUQC0qiBFw6kYWlW3SUYzwirmMjyyiFfABEwU/aK4OKv7c1F8aurxODzND0/B+75hKAqolEMUxBkxIFAKYPm05/m7mEZ8oP1tdQHl8dTbGCHoo7Ek3iAGr39lkR5fgsz0Mgnu1PARaGFZxZ7VXDiVc715wGi+upuIX0NBbeOPVM9WUWZgzPxBFh47COcUoL+yJFGAzEGJPFp1XZ3Imqg4y6Q7AXYObdjx+H22Pmit3ZkFZavVApnEk49bFU85Zc=
