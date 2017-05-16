@@ -11,7 +11,7 @@ install:
 after_success:
 - test "$TRAVIS_REPO_SLUG" == "taylor1791/purescript-aspen" && test "$TRAVIS_PULL_REQUEST"
   == "false" && test "$TRAVIS_BRANCH" == "master" && echo $GITHUB_TOKEN | pulp login
-  && echo y | pulp publish --no-publish
+  && echo y | pulp publish --no-push
 
 env:
   global:
