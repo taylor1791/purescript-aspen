@@ -3,9 +3,7 @@ language: node_js
 node_js:
 - stable
 
-before_script:
-- source .envrc
-
 install:
+- source .envrc
 - bower install
 
