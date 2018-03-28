@@ -13,7 +13,7 @@
   "author": "Taylor Everding <taylor1791@users.noreply.github.com>",
   "license": "MIT",
   "devDependencies": {
-    "bower": "^1.8.0",
+    "bower": "^1.8.4",
     "pulp": "^11.0.0",
     "purescript": "^0.11.4"
   }
